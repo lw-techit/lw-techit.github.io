@@ -1,0 +1,184 @@
+/* style.css */
+
+@font-face {
+  font-family: 'MyInconsolata';
+  src: url('../fonts/Inconsolata_Expanded-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyPlemolJP35-Regular';
+  src: url('../fonts/PlemolJP35-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  max-width: 300px; /* ロゴの最大幅を設定 */
+  margin: 0 auto; /* 中央寄せ */
+}
+
+.textbold {
+  font-weight: bold;
+  font-size: 120%;
+  /* color: #ff00dd; 落ち着いたブルー系に合わせた色 */
+}
+
+body {
+  font-family: 'MyPlemolJP35-Regular', 'MyInconsolata', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  background: #23272f;
+  /* color: #e0e0e0; */
+  color: #23272f;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header, nav, main, footer {
+  /* max-width: 900px; */
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+header {
+  background: #2c3140;
+  border-bottom: 1px solid #44495a;
+  text-align: center;
+  color: #e0e0e0;
+}
+
+nav {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+nav a {
+  color: #90caf9;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #ff00dd;
+  text-decoration: underline;
+}
+
+main {
+  background: #282c36;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.05);
+  padding: 2rem;
+}
+
+/* h1, h2, h3 {
+  color: #90caf9;
+  margin-top: 2em;
+} */
+h1, h2, h3 {
+  color: #ffff00; /* header/nav/ボタンに合わせて落ち着いたブルー系 */
+  margin-top: 2em;
+}
+
+h2 {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  /* padding: 0.3em 0.8em; */
+  /* padding: 0em 0.2em; */
+  margin-top: 3em;
+  /* margin-bottom: 0.8em; */
+  border-radius: 6px;
+  color: #444444;
+  z-index: 1;
+  /* 背景用の擬似要素を使う */
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  height: 7%;
+  background: #ffff99;
+  border-radius: 6px;
+  z-index: -1;
+}
+
+main {
+  position: relative;
+  /* background: #282c36; */
+  background: #f7f8fa; /* 白系に変更 */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.05);
+  padding: 2rem;
+  overflow: hidden; /* 擬似要素のはみ出し防止 */
+}
+
+/* 背景画像だけを別のレイヤーで表示 */
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../resources/p0112_l.png');
+  /* background-image: url('../resources/p0378_l.png'); */
+  /* background-repeat: no-repeat; */
+  /* background-size: contain; */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* opacity: 0.1; 背景画像だけにopacityを適用 */
+  pointer-events: none; /* 背景がクリックなどに反応しないように */
+  z-index: 0;
+}
+
+/* main内の実際の内容は前面に表示 */
+main > * {
+  position: relative;
+  z-index: 1;
+}
+
+button, input[type="submit"] {
+  background: #3949ab;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5em 1.2em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover, input[type="submit"]:hover {
+  background: #283593;
+}
+
+footer {
+  background: #2c3140;
+  border-top: 1px solid #44495a;
+  text-align: center;
+  font-size: 0.95em;
+  color: #b0b0b0;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+a {
+  color: #90caf9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff00dd;
+  text-decoration: underline;
+}
