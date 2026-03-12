@@ -1,0 +1,526 @@
+/* style.css */
+
+@font-face {
+  font-family: 'MyInconsolata';
+  src: url('../fonts/Inconsolata_Expanded-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyPlemolJP35-Regular';
+  src: url('../fonts/PlemolJP35-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  max-width: 200px; /* ロゴの最大幅を設定 */
+  margin: 0 auto; /* 中央寄せ */
+}
+
+.textbold2 {
+  font-weight: bold;
+  font-size: 120%;
+  /* color: #ff00dd; 落ち着いたブルー系に合わせた色 */
+}
+
+.textheaderbig_ind {
+  font-weight: bold;
+  /* font-size: 250%; */
+  font-size: 220%;
+  /* color: #23272f; */
+  /* text-shadow: 0 0 8px #999; */
+  /* text-shadow: 0 0 16px #ffffff; */
+  /* text-shadow: 3px 3px 5px #c0c0c0, -3px -3px 5px #c0c0c0, 3px -3px 5px #c0c0c0, -3px 3px 5px #c0c0c0; */
+  text-shadow: 10px 10px 5px #ffffff, -10px -10px 5px #ffffff, 10px -10px 5px #ffffff, -10px 10px 5px #ffffff, 0px 10px 5px #ffffff, 0px -10px 5px #ffffff, 10px 0px 5px #ffffff, -10px 0px 5px #ffffff, 3px 3px 5px #ffffff, -3px -3px 5px #ffffff, 3px -3px 5px #ffffff, -3px 3px 5px #ffffff, 0px 3px 5px #ffffff, 0px -3px 5px #ffffff, 3px 0px 5px #ffffff, -3px 0px 5px #ffffff;
+  /* color: #ff00dd; 落ち着いたブルー系に合わせた色 */
+  /* color: #0080ff; */
+  /* color: #006666; */
+  color: #333300;
+}
+
+.textheadersmall_ind {
+  /* font-weight: bold; */
+  font-size: 120%;
+  text-shadow: 10px 10px 5px #ffffff, -10px -10px 5px #ffffff, 10px -10px 5px #ffffff, -10px 10px 5px #ffffff, 0px 10px 5px #ffffff, 0px -10px 5px #ffffff, 10px 0px 5px #ffffff, -10px 0px 5px #ffffff, 3px 3px 5px #ffffff, -3px -3px 5px #ffffff, 3px -3px 5px #ffffff, -3px 3px 5px #ffffff, 0px 3px 5px #ffffff, 0px -3px 5px #ffffff, 3px 0px 5px #ffffff, -3px 0px 5px #ffffff;
+  /* color: #ff00dd; 落ち着いたブルー系に合わせた色 */
+  color: #23272f;
+}
+
+body {
+  /* font-family: 'MyPlemolJP35-Regular', 'MyInconsolata', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; */
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  /* background: #eeeeee; */
+  background-image: url('../resources/Circuit_Board_Traces_Silhouette-by-GDJ_lineWhite.svg');
+  /* background-image: url('../resources/Circuit_Board_Traces_Silhouette-by-GDJ.svg'); */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* color: #e0e0e0; */
+  color: #23272f;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.body_ind {
+  background: #ffffff;
+  margin: 0;
+  /* min-height: 200vh; スクロール確認用 */
+
+  /* background-image:  */
+    /* url("../resources/496_F1985D.png"), 太陽 左上 */
+    /* url("../resources/495_EEEEEE.png"), /* 雲 右上 */
+    /* url("../resources/487_FF0000.png"), /* 家 左下 */
+    /* url("../resources/830_45B990.png"); /* 木 右下 */
+
+  background-position:
+    left top,           /* 太陽 左上 */
+    right -5% top 10%,  /* 雲 右上 */
+    left -10% bottom,   /* 家 左下 */
+    right -10% bottom;  /* 木 右下 */
+
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+
+  background-attachment:
+    fixed,
+    fixed,
+    fixed,
+    fixed;
+
+  background-size:
+    20%,
+    30%,
+    30%,
+    30%;
+}
+
+header, nav, main, footer {
+  max-width: 900px;
+  /* max-width: 600px; */
+  margin: 0 auto;
+  /* padding: 1.5rem; */
+  /* padding: 0rem 2rem; */
+}
+
+header {
+  height: 600px;
+  background: #ffffff75;
+  /* border-bottom: 1px solid #44495a; */
+  text-align: center;
+  color: #e0e0e0;
+  background-image: url('../resources/business-partners-handshake-global-corporate-with-technology-concept_small.png');
+  background-size: 900px 600px;
+  background-position: top center;
+  background-attachment: local;
+  background-repeat: no-repeat;
+}
+
+.header_ind {
+  background: #2c314075;
+  border-bottom: 1px solid #44495a;
+  text-align: center;
+  color: #ffffff;
+}
+
+.header_ind2 {
+  height: 550px;
+  text-align: center;
+  color: #000000;
+  /* background-position: top center;
+  background-attachment: local; */
+  /* background: #ffffff; */
+  /* background: #2c314075; */
+  margin: 0, auto;
+  /* min-height: 200vh; スクロール確認用 */
+
+  background-image: 
+    url("../resources/1480_E8D575_cut.png"), /* 太陽 左上 */
+    url("../resources/1376_E8D575_cut.png"), /* 雲 右上 */
+    url("../resources/1419_E8D575_cut.png"), /* 家 左下 */
+    url("../resources/784_E8D575_cut.png"), /* 木 右下 */
+    url("../resources/1391_E8D575_cut.png"); /* 木 右下 */
+
+  background-position:
+    left top 30%,           /* 太陽 左上 */
+    right -4% top 30%,  /* 雲 右上 */
+    left -3% bottom 20%,   /* 家 左下 */
+    right bottom 20%,  /* 木 右下 */
+    center top 60%;
+
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+
+  background-size:
+    /* 30%, */
+    clamp(95px, 20vw, 140px),
+    clamp(110px, 30vw, 170px),
+    clamp(100px, 30vw, 180px),
+    clamp(85px, 24vw, 130px),
+    clamp(150px, 30vw, 200px);
+}
+
+/* 黒の透過レイヤー */
+/* .header_ind2::before {
+  max-width: 900px;
+  height: 500px;
+  text-align: center;
+  margin: 0, auto;
+
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.1);
+  z-index: 1;
+} */
+
+/* header内の実際の内容は前面に表示 */
+.header_ind2 > * {
+    position: relative;
+    z-index: 2;   /* レイヤーより上 */
+    /* color: white; */
+    color: #000000;
+}
+
+nav {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+nav a {
+  color: #90caf9;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #ff00dd;
+  text-decoration: underline;
+}
+
+main {
+  background: #282c36;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.05);
+  /* padding: 2rem; */
+}
+
+/* h1, h2, h3 {
+  color: #90caf9;
+  margin-top: 2em;
+} */
+
+h1, h2, h3 {
+  color: #ffff00; /* header/nav/ボタンに合わせて落ち着いたブルー系 */
+  margin-top: 2em;
+}
+
+h2 {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  /* padding: 0.3em 0.8em; */
+  /* padding: 0em 0.2em; */
+  margin-top: 3em;
+  /* margin-bottom: 0.8em; */
+  border-radius: 6px;
+  color: #444444;
+  z-index: 1;
+  /* 背景用の擬似要素を使う */
+  font-size: 1.5em;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  height: 7%;
+  background: #ffff99;
+  border-radius: 6px;
+  z-index: -1;
+}
+
+h3 {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  /* padding: 0.3em 0.8em; */
+  /* padding: 0em 0.2em; */
+  margin-top: 3em;
+  /* margin-bottom: 0.8em; */
+  border-radius: 6px;
+  color: #444444;
+  z-index: 1;
+  /* 背景用の擬似要素を使う */
+  font-size: 1.5em;
+}
+
+h3::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  height: 7%;
+  background: #ffff99;
+  border-radius: 6px;
+  z-index: -1;
+}
+
+main {
+  position: relative;
+  /* background: #282c36; */
+  background: #f7f8fa; /* 白系に変更 */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.05);
+  padding: 2rem;
+  overflow: hidden; /* 擬似要素のはみ出し防止 */
+}
+
+/* 背景画像だけを別のレイヤーで表示 */
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../resources/p0040_m.png');
+  /* background-repeat: no-repeat; */
+  /* background-size: contain; */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* opacity: 0.1; 背景画像だけにopacityを適用 */
+  pointer-events: none; /* 背景がクリックなどに反応しないように */
+  z-index: 0;
+}
+
+/* main内の実際の内容は前面に表示 */
+main > * {
+  position: relative;
+  z-index: 1;
+}
+
+button, input[type="submit"] {
+  background: #ff00dd50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5em 1.2em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover, input[type="submit"]:hover {
+  /* background: #283593; */
+  background: #ffff0050;
+}
+
+footer {
+  background: #2c3140;
+  border-top: 1px solid #44495a;
+  text-align: center;
+  font-size: 0.95em;
+  color: #b0b0b0;
+  margin-top: 2rem;
+  /* padding: 1rem; */
+  padding: 0.5rem;
+}
+
+a {
+  color: #90caf9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff00dd;
+  text-decoration: underline;
+}
+
+a.button-44 {
+    display: inline-flex;
+    justify-content: center; /* use flex-end to right-align content */
+    align-items: center;
+    vertical-align: middle;
+    width: fit-content;
+    margin: 0 1em 0 auto; /* right-align the button */
+    padding: .5em 1em;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-image: repeating-linear-gradient(-45deg, #eee, #eee 1px, #ffffff 1px, #ffffff 4px);
+    color: #333333;
+    font-weight: 600;
+    /* font-size: 1em; */
+    font-size: 0.75em;
+    /* transition: box-shadow .3s; */
+    text-decoration: none;
+}
+
+a.button-44:hover {
+    box-shadow: 0 7px 30px -5px rgb(0 0 0 / 20%);
+}
+
+a.button-44::after {
+    transform: rotate(45deg);
+    width: 5px;
+    height: 5px;
+    margin-left: 10px;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    content: '';
+}
+
+.quote-2 {
+  max-width: 500px;
+  position: relative;
+  /* padding: 2.5em 2.5em 2em 3em; */
+  padding: 3em 0em 2em 0em;
+  color: #333333;
+  font-size: 1.3em;
+}
+
+.quote-2::before,
+.quote-2::after {
+  /* display: inline-block; */
+  display: inline-block;
+  position: absolute;
+  width: 4em;
+  height: 4em;
+  content: '';
+}
+
+.quote-2::before {
+  top: 0;
+  left: 0;
+  border-top: 3px solid #2589d0;
+  border-left: 3px solid #2589d0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4.58341 17.3211C3.55316 16.2274 3 15 3 13.0103C3 9.51086 5.45651 6.37366 9.03059 4.82318L9.92328 6.20079C6.58804 8.00539 5.93618 10.346 5.67564 11.822C6.21263 11.5443 6.91558 11.4466 7.60471 11.5105C9.40908 11.6778 10.8312 13.159 10.8312 15C10.8312 16.933 9.26416 18.5 7.33116 18.5C6.2581 18.5 5.23196 18.0095 4.58341 17.3211ZM14.5834 17.3211C13.5532 16.2274 13 15 13 13.0103C13 9.51086 15.4565 6.37366 19.0306 4.82318L19.9233 6.20079C16.588 8.00539 15.9362 10.346 15.6756 11.822C16.2126 11.5443 16.9156 11.4466 17.6047 11.5105C19.4091 11.6778 20.8312 13.159 20.8312 15C20.8312 16.933 19.2642 18.5 17.3312 18.5C16.2581 18.5 15.232 18.0095 14.5834 17.3211Z' fill='%232589d0'%3E%3C/path%3E%3C/svg%3E");
+  background-position: top 35% left 35%;
+  background-size: 2em;
+  background-repeat: no-repeat;
+}
+
+.quote-2::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 3px solid #2589d0;
+  border-right: 3px solid #2589d0;
+}
+
+.quote-2 p {
+  margin-top: 0;
+}
+
+.quote-2 p:last-of-type {
+  margin-bottom: 0;
+}
+
+.fusen-3 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* max-width: 400px; */
+    max-width: 500px;
+    /* width: 240px;
+    height: 240px; */
+    /* margin: 1em auto; */
+    margin: 1em auto;
+    padding: 1.5em .2em;
+    background-color: #e1f1fe;
+    color: #333333;
+    font-size: 1.25em;
+}
+
+.fusen-3::before {
+    position: absolute;
+    bottom: -5px;
+    right: 7px;
+    z-index: -1;
+    transform: rotate(5deg);
+    /* width: 70%;
+    height: 50%; */
+    width: 90%;
+    height: 90%;
+    background-color: #d0d0d0;
+    content: "";
+    filter: blur(4px);
+}
+
+.service_ind_detail {
+    /* margin: 3em auto; */
+    padding: 0em 2.5em 2.5em 2.5em;
+    /* background-color: #99999950; */
+}
+
+.accordion-006 {
+    /* max-width: 500px; */
+    margin-bottom: 7px;
+    /* background-color: #f2f2f2; */
+    background: #99999950;
+    border-radius: 5px;
+}
+
+.accordion-006 summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1.5em 2em;
+    color: #333333;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.accordion-006 summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion-006 summary::after {
+    transform: translateY(-25%) rotate(45deg);
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+    border-bottom: 3px solid #02c2c2;
+    border-right: 3px solid #02c2c2;
+    content: '';
+    transition: transform .3s;
+}
+
+.accordion-006[open] summary::after {
+    transform: rotate(225deg);
+}
+
+.accordion-006 p {
+    transform: translateY(-10px);
+    opacity: 0;
+    /* margin: 0; */
+    /* padding: .3em 2em 1.5em; */
+    color: #333333;
+    transition: transform .5s, opacity .5s;
+}
+
+.accordion-006[open] p {
+    transform: none;
+    opacity: 1;
+}
+
+

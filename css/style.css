@@ -17,38 +17,75 @@
 .logo {
   width: 100%;
   height: auto;
-  max-width: 300px; /* ロゴの最大幅を設定 */
+  max-width: 200px; /* ロゴの最大幅を設定 */
   margin: 0 auto; /* 中央寄せ */
 }
 
 .textbold {
   font-weight: bold;
+  font-size: 150%;
+  /* color: #ff00dd; 落ち着いたブルー系に合わせた色 */
+}
+
+.textbold2 {
+  font-weight: bold;
   font-size: 120%;
   /* color: #ff00dd; 落ち着いたブルー系に合わせた色 */
 }
 
+.textheaderbig {
+  font-weight: bold;
+  font-size: 240%;
+  /* color: #ff00dd; 落ち着いたブルー系に合わせた色 */
+  /* color: #23272f; */
+  color: #333300;
+  text-shadow: 0 0 8px #999;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
-  font-family: 'MyPlemolJP35-Regular', 'MyInconsolata', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-  background: #23272f;
+  background-color: #333333;
+  background-image: url('../resources/Circuit_Board_Traces_Silhouette-by-GDJ_lineGray.png');
+  /* background-image: url('../resources/Circuit_Board_Traces_Silhouette-by-GDJ_lineWhite.svg'); */
+  /* background-image: url('../resources/Circuit_Board_Traces_Silhouette-by-GDJ.svg'); */
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   /* color: #e0e0e0; */
-  color: #23272f;
+  /* color: #23272f; */
+  width: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
 
 header, nav, main, footer {
-  /* max-width: 900px; */
-  max-width: 600px;
+  width: 100%;
+  max-width: 900px;
+  /* max-width: 600px; */
   margin: 0 auto;
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
+  /* padding: 0rem 2rem; */
+  box-sizing: border-box;
 }
 
 header {
-  background: #2c3140;
-  border-bottom: 1px solid #44495a;
+  height: 600px;
+  background: #ffffff75;
+  /* border-bottom: 1px solid #44495a; */
   text-align: center;
   color: #e0e0e0;
+  background-image: url('../resources/business-partners-handshake-global-corporate-with-technology-concept_small.png');
+  background-size: 900px 600px;
+  background-position: top center;
+  background-attachment: local;
+  background-repeat: no-repeat;
 }
 
 nav {
@@ -73,13 +110,14 @@ main {
   background: #282c36;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(33, 150, 243, 0.05);
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 /* h1, h2, h3 {
   color: #90caf9;
   margin-top: 2em;
 } */
+
 h1, h2, h3 {
   color: #ffff00; /* header/nav/ボタンに合わせて落ち着いたブルー系 */
   margin-top: 2em;
@@ -97,6 +135,7 @@ h2 {
   color: #444444;
   z-index: 1;
   /* 背景用の擬似要素を使う */
+  font-size: 1.5em;
 }
 
 h2::before {
@@ -112,10 +151,38 @@ h2::before {
   z-index: -1;
 }
 
+h3 {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  /* padding: 0.3em 0.8em; */
+  /* padding: 0em 0.2em; */
+  margin-top: 3em;
+  /* margin-bottom: 0.8em; */
+  border-radius: 6px;
+  color: #444444;
+  z-index: 1;
+  /* 背景用の擬似要素を使う */
+  font-size: 1.5em;
+}
+
+h3::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  height: 7%;
+  background: #ffff99;
+  border-radius: 6px;
+  z-index: -1;
+}
+
 main {
   position: relative;
-  /* background: #282c36; */
-  background: #f7f8fa; /* 白系に変更 */
+  background: #282c36;
+  background: rgba(255, 255, 255, 0.85); /* 半透明白に変更してbodyの背景を見える様にする */
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(33, 150, 243, 0.05);
   padding: 2rem;
@@ -130,8 +197,7 @@ main::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../resources/p0112_l.png');
-  /* background-image: url('../resources/p0378_l.png'); */
+  /* background-image: url('../resources/p0040_m.png'); */
   /* background-repeat: no-repeat; */
   /* background-size: contain; */
   background-size: cover;
@@ -149,7 +215,7 @@ main > * {
 }
 
 button, input[type="submit"] {
-  background: #3949ab;
+  background: #ff00dd50;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -160,7 +226,8 @@ button, input[type="submit"] {
 }
 
 button:hover, input[type="submit"]:hover {
-  background: #283593;
+  /* background: #283593; */
+  background: #ffff0050;
 }
 
 footer {
@@ -170,7 +237,8 @@ footer {
   font-size: 0.95em;
   color: #b0b0b0;
   margin-top: 2rem;
-  padding: 1rem;
+  /* padding: 1rem; */
+  padding: 0.5rem;
 }
 
 a {
@@ -182,3 +250,98 @@ a:hover {
   color: #ff00dd;
   text-decoration: underline;
 }
+
+a.button-44 {
+    display: inline-flex;
+    justify-content: center; /* use flex-end to right-align content */
+    align-items: center;
+    vertical-align: middle;
+    width: fit-content;
+    margin: 0 1em 0 auto; /* right-align the button */
+    padding: .5em 1em;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-image: repeating-linear-gradient(-45deg, #eee, #eee 1px, #ffffff 1px, #ffffff 4px);
+    color: #333333;
+    font-weight: 600;
+    /* font-size: 1em; */
+    font-size: 0.75em;
+    /* transition: box-shadow .3s; */
+    text-decoration: none;
+}
+
+a.button-44:hover {
+    box-shadow: 0 7px 30px -5px rgb(0 0 0 / 20%);
+}
+
+a.button-44::after {
+    transform: rotate(45deg);
+    width: 5px;
+    height: 5px;
+    margin-left: 10px;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    content: '';
+}
+
+.box-021 {
+    position: relative;
+    max-width: 400px;
+    /* margin: 1em auto; */
+    margin: 1em auto;
+    padding: 1em 1.5em;
+    border: 2px solid #666666;
+    border-radius: 3px;
+    color: #333;
+}
+
+.box-021::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -1em;
+    left: -1em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #666666;
+    color: #fff;
+    font-weight: 600;
+    content: attr(data-number);
+}
+
+.balloon4 {
+  position: relative;
+  margin: 2em 0 2em 40px;
+  padding: 15px;
+  background: #fff0c6;
+  border-radius: 30px;
+}
+
+.balloon4:before {  
+  content: "";
+  position: absolute;
+  left: -38px;
+  width: 13px;
+  height: 12px;
+  bottom: 0;
+  background: #fff0c6;
+  border-radius: 50%;
+}
+
+.balloon4:after {
+  content: "";
+  position: absolute;
+  left: -24px;
+  width: 20px;
+  height: 18px;
+  bottom: 3px;
+  background: #fff0c6;
+  border-radius: 50%;
+}
+.balloon4 p {
+  margin: 0; 
+  padding: 0;
+}
+
