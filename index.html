@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="B1ysC-URaMBqam3sjgZNdSPftzsTWWWzNnFlkomI9yY" />
     <title>株式会社LW　〜ITによる事業支援（中小企業、個人事業主向け）〜</title>
-    <link rel="icon" href="./resources/favicon.ico">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="icon" href="/resources/favicon.ico"><!-- 全ページ共通のfaviconを使用 -->
+    <link rel="stylesheet" href="./css/style.css"><!-- このページ専用のCSSを使用 -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css"><!-- 全ページ共通のBootstrapを使用 -->
 </head>
 <body>
-    <header>
-        <br>
-        <div style="align-items: right; display: flex; justify-content: right;">
-            <a href="./ind/index.html" class="button-44">個人のお客様向け<br>ページはこちら</a>
+    <header id="header">
+        <div class="pt-4 pb-4" style="align-items: right; display: flex; justify-content: right;">
+            <a href="/ind/index.html" class="button-44">個人のお客様向け<br>ページはこちら</a>
         </div>
-        <br>
         <h1 style="visibility: hidden; margin-top: 0em; height: 0em;">株式会社LW</h1>
         <div class="container">
             <div class="row justify-content-center textheaderbig lh-lg">
@@ -271,7 +269,7 @@
                                 </ul>
                             </div>
                             <div class="col-sm-6 col-lg-5">
-                                <img src="./resources/lwlogo_strong.png" alt="LW Logo" class="logo">
+                                <img src="/resources/lwlogo_strong.png" alt="LW Logo" class="logo">
                             </div>
                         </div>
                     </div>
@@ -374,8 +372,27 @@
 
     </main>
 
-    <footer>
-        <p>&copy; LW Inc.</p>
-    </footer>
+    <!-- <footer>
+        <div class="container text-center">
+            <div class="mt-3 mb-3 pb-3 row justify-content-evenly">
+                <div class="col-sm-3 col-md-3">
+                    <a href="/policy/index.html#privacypolicy">プライバシーポリシー</a>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <a href="/policy/index.html#disclaimer">免責事項</a>
+                </div>
+            </div>
+
+            <div class="mt-3 row justify-content-evenly">
+                <div class="col-sm-9 col-lg-9">
+                    <p>&copy; LW Inc.</p>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+    <div id="footer"></div>
+    <script src="/scripts/footer.js"></script>
+
 </body>
 </html>
